@@ -54,11 +54,9 @@ module "vm_module" {
   ip_configuration_name1 = module.networking_module.nic-pool-association1
   ip_configuration_name2 = module.networking_module.nic-pool-association2
   backend_name = module.networking_module.backend_load_balancer
-  
   size_vm1 = var.size_vm1
   size_vm2 = var.size_vm2
   admin_username_vm1 = var.admin_username_vm1
   admin_username_vm2 = var.admin_username_vm2
-  #admin_password_vm1 = var.admin_password_vm1
 }
 
