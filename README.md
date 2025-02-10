@@ -1,18 +1,17 @@
 # Load-Balancer-Public
-Configurando um Load Balancer Público no Azure com 2 VMs, 1 VNet, 2 Subnets, 1 NSG e 1 Public IP
+Setting Up a Public Load Balancer on Azure with 2 VMs, 1 VNet, 2 Subnets, 1 NSG, and 1 Public IP
 
-Hoje vou compartilhar um exemplo prático de como configurar um Load Balancer público no Azure, utilizando 2 VMs como backend pool, 1 VNet, 2 subnets e 1 NSG (Network Security Group). Essa configuração é ideal para distribuir tráfego entre servidores, garantir alta disponibilidade e adicionar camadas de segurança.
+Today, I’ll share a practical example of how to configure a Public Load Balancer on Azure, using 2 VMs as a backend pool, 1 VNet, 2 subnets, 1 NSG (Network Security Group), and 1 Public IP. This setup is ideal for distributing traffic between servers, ensuring high availability, and adding security layers.
 
-Componentes Utilizados:
-Load Balancer Público: Para distribuir o tráfego entre as VMs.
+Components Used:
+Public Load Balancer: To distribute traffic between the VMs.
 
-2 VMs (Backend Pool): Servidores que receberão o tráfego balanceado.
+2 VMs (Backend Pool): Servers that will receive the balanced traffic.
 
-1 VNet (Rede Virtual): Para conectar todos os recursos.
+1 VNet (Virtual Network): To connect all resources.
 
-2 Subnets: Para segmentar a rede e isolar funções (ex.: frontend e backend).
+2 Subnets: To segment the network and isolate functions (e.g., frontend and backend).
 
-1 NSG (Network Security Group): Para controlar o tráfego de rede e adicionar regras de segurança.
+1 NSG (Network Security Group): To control network traffic and add security rules.
 
-1 Public IP: Para expor o Load Balancer à internet.
-
+1 Public IP: To expose the Load Balancer to the internet.
