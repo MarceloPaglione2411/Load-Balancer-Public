@@ -31,7 +31,7 @@ module "networking_module" {
 }
 
 module "vm_module" {
-  source = "./vms"
+  source = "./vm"
   rg_name = module.rg_module.rg_name_marcelo
   rg_location = module.rg_module.location
   vm_win1_name = var.vm_win1_name
